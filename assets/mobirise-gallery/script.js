@@ -1,5 +1,5 @@
-(function($) {
-
+(function ($) {
+    
     var isBuilder = $('html').hasClass('is-builder');
     if (!isBuilder) {
 
@@ -17,16 +17,28 @@
             return result ? result[1] : false;
         }
         /* google iframe api init function */
-        window.onYouTubeIframeAPIReady = function() {
+        window.onYouTubeIframeAPIReady = function () {
             var ytp = ytp || {};
             ytp.YTAPIReady || (ytp.YTAPIReady = !0,
                 jQuery(document).trigger("YTAPIReady"));
-            $('.video-slide').each(function(i) {
+            $('.video-slide').each(function (i) {
                 var index = $(this).index();
                 var section = $(this).closest('section');
                 $('.video-container').eq(i).append('<div id ="mbr-video-' + i + '" class="mbr-background-video" data-video-num="' + i + '"></div>')
                     .append('<div class="item-overlay"></div>');
-                $(this).attr('data-video-num', i);
+                     $(this).attr('data-video-num', i);
+                if ($(this).attr('data-video-url').indexOf('vimeo.com') != -1) {
+                    var options = {
+                        id: $(this).attr('data-video-url'),
+                        width: '100%',
+                        height: '100%',
+                        loop: true
+                    };
+                   
+                    var player = new Vimeo.Player('mbr-video-' + i, options);
+                    player.playVideo = Vimeo.play;
+                } else {
+               
                 var player = new YT.Player('mbr-video-' + i, {
                     height: '100%',
                     width: '100%',
@@ -34,7 +46,7 @@
                     events: {
                         'onReady': onPlayerReady,
                     }
-                })
+                })}
                 players.push(player);
             });
         }
@@ -50,68 +62,17 @@
                 (quality || '') + 'default.jpg';
         }
     }
-    var getPreviewUrlWithBestQuality = (function() {
-        var cache = {};
-        return function(id) {
-            var def = $.Deferred();
-            if (id in cache) {
-                if (cache[id]) {
-                    def.resolve(cache[id]);
-                } else {
-                    def.reject('Preview image not found.');
-                }
-            } else {
-                $('<img>').on('load', function() {
-                    if (120 == (this.naturalWidth || this.width)) {
-                        // selection of preview in the best quality
-                        var file = this.src.split('/').pop();
-                        switch (file) {
-                            case 'maxresdefault.jpg':
-                                this.src = this.src.replace(file, 'sddefault.jpg');
-                                break;
-                            case 'sddefault.jpg':
-                                this.src = this.src.replace(file, 'hqdefault.jpg');
-                                break;
-                            case 'hqdefault.jpg':
-                                this.src = this.src.replace(file, 'default.jpg');
-                                break;
-                            default:
-                                cache[id] = null;
-                                def.reject('Preview image not found.');
-                                break;
-                        }
-                    } else {
-                        def.resolve(cache[id] = this.src);
-                    }
-                }).attr('src', getPreviewUrl(id, 'maxres'));
-            }
-            return def;
-        };
-
-    })();
     /* Masonry Grid */
-    $(document).on('add.cards change.cards', function(event) {
-        var $section = $(event.target);
-
-        function setImgSrc(item) {
-            var $img = item.find('img');
-            var $modalImg = item.closest('section').find('.modal-dialog .carousel-inner .carousel-item').eq($img.closest('.mbr-gallery-item').index()).find('img');
-            if (item.hasClass('video-slide')) {
-                var videoId = getVideoId(item.attr('data-video-url'));
-                getPreviewUrlWithBestQuality(videoId).done(function(url) {
-                    $img.attr('src', url).css('visibility', 'visible');
-                    $modalImg.attr('src', url);
-                });
-            }
-            return videoId;
-        }
-
+    $(document).on('add.cards change.cards', function (event) {
+        var $section = $(event.target),
+            allItem = $section.find('.mbr-gallery-filter-all');
         if (!$section.hasClass('mbr-slider-carousel')) return;
         var filterList = [];
-        $section.find('.mbr-gallery-item').each(function(el) {
-            var tagsAttr = ($(this).attr('data-tags')||"").trim();
+
+        $section.find('.mbr-gallery-item').each(function (el) {
+            var tagsAttr = ($(this).attr('data-tags') || "").trim();
             var tagsList = tagsAttr.split(',');
-            tagsList.map(function(el) {
+            tagsList.map(function (el) {
                 var tag = el.trim();
 
                 if ($.inArray(tag, filterList) == -1)
@@ -119,15 +80,13 @@
             })
         })
         if ($section.find('.mbr-gallery-filter').length > 0 && $(event.target).find('.mbr-gallery-filter').hasClass('gallery-filter-active')) {
-            var filterHtml = '<ul><li class="mbr-gallery-filter-all active">All</li>';
-
-            $section.find('.mbr-gallery-filter').html('');
-            filterList.map(function(el) {
+            var filterHtml = '';
+            $section.find('.mbr-gallery-filter ul li:not(li:eq(0))').remove();
+            filterList.map(function (el) {
                 filterHtml += '<li>' + el + '</li>'
-            })
-            filterHtml += '</ul>';
-            $section.find('.mbr-gallery-filter').append(filterHtml);
-            $section.on('click', '.mbr-gallery-filter li', function(e) {
+            });
+            $section.find('.mbr-gallery-filter ul').append(allItem).append(filterHtml);
+            $section.on('click', '.mbr-gallery-filter li', function (e) {
                 $li = $(this);
                 $li.parent().find('li').removeClass('active')
                 $li.addClass('active');
@@ -135,16 +94,16 @@
                 var $mas = $li.closest('section').find('.mbr-gallery-row');
                 var filter = $li.html().trim();
 
-                $section.find('.mbr-gallery-item').each(function(i, el) {
+                $section.find('.mbr-gallery-item').each(function (i, el) {
                     var $elem = $(this);
                     var tagsAttr = $elem.attr('data-tags');
                     var tags = tagsAttr.split(',');
-                    tagsTrimmed = tags.map(function(el) {
+                    tagsTrimmed = tags.map(function (el) {
                         return el.trim();
                     })
                     if ($.inArray(filter, tagsTrimmed) == -1 && !$li.hasClass('mbr-gallery-filter-all')) {
                         $elem.addClass('mbr-gallery-item__hided');
-                        setTimeout(function() {
+                        setTimeout(function () {
                             $elem.css('left', '300px');
                         }, 200);
                     } else {
@@ -152,7 +111,7 @@
                     };
 
                 })
-                setTimeout(function() {
+                setTimeout(function () {
                     $mas.closest('.mbr-gallery-row').trigger('filter');
                 }, 50);
             })
@@ -162,33 +121,35 @@
         }
         if (!isBuilder) {
 
-            $section.find('.video-slide').each(function(i) {
+            $section.find('.video-slide').each(function (i) {
                 var index = $(this).closest('.mbr-gallery-item').index();
 
-                setImgSrc($(this));
+               // setImgSrc($(this));
             });
         }
 
         if (typeof $.fn.masonry !== 'undefined') {
-            $section.outerFind('.mbr-gallery').each(function() {
+            $section.outerFind('.mbr-gallery').each(function () {
                 var $msnr = $(this).find('.mbr-gallery-row').masonry({
                     itemSelector: '.mbr-gallery-item:not(.mbr-gallery-item__hided)',
                     percentPosition: true
                 });
                 // reload masonry (need for adding new or resort items)
                 $msnr.masonry('reloadItems');
-                $msnr.on('filter', function() {
-                        $msnr.masonry('reloadItems');
-                        $msnr.masonry('layout');
-                    }.bind(this, $msnr))
-                    // layout Masonry after each image loads
-                $msnr.imagesLoaded().progress(function() {
+                $msnr.on('filter', function () {
+                    $msnr.masonry('reloadItems');
+                    $msnr.masonry('layout');
+                    // update parallax backgrounds
+                    $(window).trigger('update.parallax')
+                }.bind(this, $msnr))
+                // layout Masonry after each image loads
+                $msnr.imagesLoaded().progress(function () {
                     $msnr.masonry('layout');
                 });
             });
         }
     });
-    $('.mbr-gallery-item').on('click','a',function(e){
+    $('.mbr-gallery-item').on('click', 'a', function (e) {
         e.stopPropagation();
     })
     var timeout;
@@ -210,7 +171,7 @@
         var bottomPadding = 10;
         var wndW = $(window).width() - windowPadding * 2;
         var wndH = $(window).height() - windowPadding * 2;
-        $lightbox.each(function() {
+        $lightbox.each(function () {
             var setWidth, setTop;
             var isShown = $(this).hasClass('in');
             var $modalDialog = $(this).find('.modal-dialog');
@@ -249,36 +210,39 @@
 
     /* pause/start video on different events and fit lightbox */
     var $window = $(document).find('.mbr-gallery');
-    $window.on('show.bs.modal', function(e) {
+    $window.on('show.bs.modal', function (e) {
 
         clearTimeout(timeout2);
-        var timeout2 = setTimeout(function() {
+        var timeout2 = setTimeout(function () {
             var index = $(e.relatedTarget).parent().index();
             var slide = $(e.target).find('.carousel-item').eq(index).find('.mbr-background-video');
             $(e.target).find('.carousel-item .mbr-background-video')
             if (slide.length > 0) {
-                players[+slide.attr('data-video-num')].playVideo();
+                var player =  players[+slide.attr('data-video-num')];
+                player.playVideo?player.playVideo():player.play();
             }
         }, 500);
         fitLBtimeout();
     })
-    $window.on('slide.bs.carousel', function(e) {
+    $window.on('slide.bs.carousel', function (e) {
         var ytv = $(e.target).find('.carousel-item.active .mbr-background-video');
         if (ytv.length > 0) {
-            players[+ytv.attr('data-video-num')].pauseVideo();
+            var player =  players[+ytv.attr('data-video-num')];
+            player.pauseVideo?player.pauseVideo():player.pause();
         }
     });
     $(window).on('resize load', fitLBtimeout);
-    $window.on('slid.bs.carousel', function(e) {
+    $window.on('slid.bs.carousel', function (e) {
         var ytv = $(e.target).find('.carousel-item.active .mbr-background-video');
         if (ytv.length > 0) {
-            players[+ytv.attr('data-video-num')].playVideo();
+            var player =  players[+ytv.attr('data-video-num')];
+            player.playVideo?player.playVideo():player.play();
         }
         fitLBtimeout();
     });
-    $window.on('hide.bs.modal', function(e) {
-        players.map(function(player, i) {
-            player.pauseVideo();
+    $window.on('hide.bs.modal', function (e) {
+        players.map(function (player, i) {
+            player.pauseVideo?player.pauseVideo():player.pause();
         });
     });
-}(jQuery));
+} (jQuery));

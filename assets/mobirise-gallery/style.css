@@ -89,6 +89,7 @@
   width: 0px !important;
   height: 0px;
   left: 0 !important;
+  padding: 0 !important;
 }
 
 .mbr-gallery-item__hided img {
@@ -195,8 +196,12 @@
     padding: 3rem;
   }
 }
+.video-container .mbr-background-video iframe {
+  width:100%;
+  height:100%;
+}
 @media(max-width:992px) and (min-width:400px) {
- 
+
   .mbr-gallery .mbr-gallery-item--p6, .mbr-gallery .mbr-gallery-item--p5, .mbr-gallery .mbr-gallery-item--p4, .mbr-gallery .mbr-gallery-item--p3, .mbr-gallery .mbr-gallery-item--p2 {
     width: 50%;
   }

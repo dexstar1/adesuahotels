@@ -1,9 +1,9 @@
 {
   "settings": {
-    "currentPage": "index.html",
+    "currentPage": "restaurantandbar.html",
     "versionFirst": "3.5.2",
-    "uniqCompNum": 0,
-    "versionPublish": "3.5.2",
+    "uniqCompNum": 1,
+    "versionPublish": "3.12.1",
     "name": "Adesua hotels",
     "theme": {
       "name": "mobirise3",
@@ -18,21 +18,18 @@
         "titleFont": "Montserrat",
         "subtitleFont": "Lora",
         "textFont": "Raleway",
-        "isRoundedButtons": false,
+        "isRoundedButtons": true,
         "isAnimatedOnScroll": true,
-        "isScrollToTopButton": false
+        "isScrollToTopButton": true,
+        "isRtl": true
       }
     },
     "scrollAnimation": "true",
-    "favicon": "assets/images/adesua-hotel-128x85-91.png",
+    "favicon": "@PROJECT_PATH@/assets/images/adesua-hotel-128x85-91.png",
     "cookiesAlert": "",
     "google-analytics": "",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png",
-    "publishType": "local",
-    "publishPath": "file:///C:/Users/User/Documents/adesua%20hotels%2011816/New%20folder",
-    "ftpLocation": "ftp://adesuaho@www.adesuahotels.com.ng:21",
-    "publishFtpPath": ""
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -102,7 +99,7 @@
             "fontName": {},
             "fontColor": "#ffffff",
             "fontHoverColor": "#c0a375",
-            "transparent": false,
+            "transparent": true,
             "sticky": true,
             "logo": true,
             "showBrand": true,
@@ -112,7 +109,7 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "assets/images/adesua-hotel-192x128-60.png",
+              "src": "@PROJECT_PATH@/assets/images/adesua-hotel-192x128-60.png",
               "height": 128,
               "alt": "Mobirise",
               "link": "http://adesuahotels.com.ng",
@@ -162,7 +159,7 @@
             "slides": [
               {
                 "active": false,
-                "image": "assets/images/sam-4145-2000x940-23.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4145-2000x940-23.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -176,7 +173,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4033-2000x1500-12.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4033-2000x1500-12.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -190,7 +187,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4185-2000x1500-7.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4185-2000x1500-7.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -205,7 +202,7 @@
               },
               {
                 "active": true,
-                "image": "assets/images/sam-4144-2000x1500-79.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4144-2000x1500-79.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -323,7 +320,7 @@
           "title1": "A Perfect Getaway",
           "subtitle1": "Bootstrap 4 has been noted",
           "caption1": "Whatever your reasons for travelling; business or pleasure?Our exotic rooms will make your stay worthwhile<br>",
-          "button1": "<a data-app-btn=\"true\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
+          "button1": "<a data-app-btn=\"true\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" class=\"btn btn-info\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
           "media2": {
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-features4",
@@ -340,7 +337,7 @@
           "title2": "Hold your events with us&nbsp;",
           "subtitle2": "One of Bootstrap 4's big points",
           "caption2": "Our exquisite events center is now available for you to host your various events and meetings<br><br>",
-          "button2": "<a data-app-btn=\"true\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
+          "button2": "<a data-app-btn=\"true\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" class=\"btn btn-info\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
           "media3": {
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-features4",
@@ -356,7 +353,7 @@
           "title3": "Restaurant &amp; Bar",
           "subtitle3": "Google has a highly exhaustive list of fonts",
           "caption3": "Indulge your taste buds with our local and international delicacies. Have a feel of absolute relation at our cuisine bar<br> ",
-          "button3": " <a data-app-btn=\"true\" href=\"restaurantandbar.html\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
+          "button3": " <a data-app-btn=\"true\" href=\"restaurantandbar.html\" class=\"btn btn-info\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media4": {
             "iconFont": {
               "active": true,
@@ -416,26 +413,26 @@
           "_name": "msg-box2",
           "_anchor": "msg-box2-0",
           "_params": {
-            "paddingTop": "2",
-            "paddingBottom": "2",
-            "bgImageRadio": false,
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "bgImageRadio": true,
             "parallax": true,
             "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
             "bgColor": "#41a85f",
-            "bgColorRadio": true,
+            "bgColorRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
             "bgVideoRadio": false,
-            "overlay": false,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222",
+            "overlay": true,
+            "overlayOpacity": "0.5",
+            "overlayColor": "#553982",
             "inverse": true,
             "showButtons": true,
             "showTitle": true,
             "showText": true
           },
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
           "title": "MAKE RESERVATION TODAY",
           "text": ""
         },
@@ -498,11 +495,11 @@
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
-            "bgImageRadio": false,
+            "bgImageRadio": true,
             "parallax": true,
             "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
             "bgColor": "#41a85f",
-            "bgColorRadio": true,
+            "bgColorRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
@@ -515,56 +512,9 @@
             "showText": true,
             "showTitle": true
           },
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-success\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
-          "text": "<span style=\"font-style: normal;\"><b>Are you at the synagogue church of all nations for a short period?<br>Good news!!! We are close by, get an amazing discount offer today. Simply use the coupon code \"SYNAGOGUE\"&nbsp;</b></span>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\" data-toolbar=\"-mbrBtnMove\">BOOK NOW</a>",
+          "text": "<span style=\"font-style: normal;\"><b>Are you at the synagogue church of all nations for a short stay?. Good news!!!! We are close by, get an amazing discount offer today. Simply use the coupon code \"SYNAGOGUE\"</b></span>",
           "title": ""
-        },
-        {
-          "_name": "contacts4",
-          "_anchor": "contacts4-0",
-          "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#2e2e2e",
-            "bgColorRadio": true,
-            "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#3C3C3C"
-          },
-          "text1": "<strong>Address</strong><br>98 Abanishe Street,<br>Off kudaki Road,<br>Hostel bus stop,<br>Agodo-Egbe,<br>Lagos,Nigeria.<br><br>\n<strong>Contacts</strong><br>\nEmail: <a href=\"mailto:jonsaix852@gmail.com\">info@adesuahotels.com.ng</a><br>&nbsp;Phone: +2348064474692,<br>Phone 2: +447506151240<br>",
-          "text2": "<p class=\"mbr-contacts__text\"><strong>Links</strong></p><ul class=\"mbr-contacts__list\"><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"index.html#msg-box8-0\">About</a></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><br></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"room.html\">Rooms</a></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><br></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\">Book Now</a></span></font></p></ul>",
-          "form": {
-            "title": "MESSAGE",
-            "action": "jonsaix852@gmail.com",
-            "alerts": {
-              "success": "Thanks for filling out form!"
-            },
-            "fields": {
-              "name": {
-                "title": "Name",
-                "visible": true,
-                "customTitle": "Name*"
-              },
-              "email": {
-                "title": "Email",
-                "visible": true,
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "title": "Phone",
-                "visible": true,
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "Message"
-              }
-            }
-          },
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-sm btn-black\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\">Contact us</a>"
         },
         {
           "_name": "footer1",
@@ -581,7 +531,45 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "Copyright © . Adesua hotels and events center. 2016 Developed by <a href=\"http://oriaddesigns.com\">oriad&nbsp;designs</a>"
+          "text": "Copyright © . Adesua hotels and events center. 2016 Design by <a href=\"http://oriaddesigns.com\">oriad&nbsp;designs</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_anchor": "contacts1-0",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#2e2e2e",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#3C3C3C"
+          },
+          "logo": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/adesua-hotel-192x128-128x85.png",
+              "width": 128,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "text1": "<strong>Address</strong>&nbsp;<br>98Abanishe Street<br>Off kudaki Road,<br>Hostel bus stop,<br>Agodo-Egbe,<br>Lagos,Nigeria",
+          "text2": "<strong>Contacts</strong><br>\nEmail: info@adesuahotels.com.ng<br> Phone: +2348064474692<br>Phone 2: +447506151240",
+          "text3": "<p><font color=\"#7c7c7c\" face=\"Montserrat, sans-serif\" size=\"3\"><span style=\"letter-spacing: -1px; line-height: 20px;\"><b>Quick links</b></span></font><br>\n<a href=\"index.html#msg-box8-0\">About</a><a class=\"text-primary\" href=\"https://mobirise.com/\"></a><br>\n<a href=\"room.html\">Rooms</a><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-win.zip\"></a><br>\n<a href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\">Book Now</a><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-mac.zip\"></a></p>"
         }
       ]
     },
@@ -645,7 +633,7 @@
             "fontName": {},
             "fontColor": "#ffffff",
             "fontHoverColor": "#c0a375",
-            "transparent": false,
+            "transparent": true,
             "sticky": true,
             "logo": true,
             "showBrand": true,
@@ -655,7 +643,7 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "assets/images/adesua-hotel-192x128-21.png",
+              "src": "@PROJECT_PATH@/assets/images/adesua-hotel-192x128-21.png",
               "height": 128,
               "alt": "Mobirise",
               "link": "https://adesuahotels.com.ng",
@@ -708,7 +696,7 @@
             "slides": [
               {
                 "active": false,
-                "image": "assets/images/sam-4050-2000x1432-90.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4050-2000x1432-90.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -722,7 +710,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4040-2000x1500-60.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4040-2000x1500-60.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -736,7 +724,7 @@
               },
               {
                 "active": true,
-                "image": "assets/images/sam-4033-2000x1500-28.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4033-2000x1500-28.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -823,9 +811,9 @@
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
             "bgVideoRadio": false,
-            "overlay": false,
+            "overlay": true,
             "overlayOpacity": 0.5,
-            "overlayColor": "#222",
+            "overlayColor": "#b7faca",
             "columns": 4,
             "showImages": true,
             "showTitles": true,
@@ -947,8 +935,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4170-2000x1500-25-2000x1500-61.jpg",
-                "image": "assets/images/sam-4170-2000x1500-25.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4170-2000x1500-25-2000x1500-61.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4170-2000x1500-25.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -957,8 +945,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4051-2000x1801-75-2000x1801-90.jpg",
-                "image": "assets/images/sam-4051-2000x1801-75.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4051-2000x1801-75-2000x1801-90.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4051-2000x1801-75.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -967,8 +955,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4049-2000x1500-31-2000x1500-67.jpg",
-                "image": "assets/images/sam-4049-2000x1500-31.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4049-2000x1500-31-2000x1500-67.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4049-2000x1500-31.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -977,8 +965,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4044-2000x1500-32-2000x1500-47.jpg",
-                "image": "assets/images/sam-4044-2000x1500-32.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4044-2000x1500-32-2000x1500-47.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4044-2000x1500-32.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -987,8 +975,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4043-2000x1500-1-2000x1500-48.jpg",
-                "image": "assets/images/sam-4043-2000x1500-1.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4043-2000x1500-1-2000x1500-48.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4043-2000x1500-1.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -997,8 +985,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4040-2000x1500-24-2000x1500-51.jpg",
-                "image": "assets/images/sam-4040-2000x1500-24.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4040-2000x1500-24-2000x1500-51.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4040-2000x1500-24.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1007,8 +995,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4030-2000x1500-84-2000x1500-69.jpg",
-                "image": "assets/images/sam-4030-2000x1500-84.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4030-2000x1500-84-2000x1500-69.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4030-2000x1500-84.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1017,8 +1005,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4055-2000x1500-90-2000x1500-50.jpg",
-                "image": "assets/images/sam-4055-2000x1500-90.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4055-2000x1500-90-2000x1500-50.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4055-2000x1500-90.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1027,8 +1015,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4058-2000x1500-57-2000x1500-27.jpg",
-                "image": "assets/images/sam-4058-2000x1500-57.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4058-2000x1500-57-2000x1500-27.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4058-2000x1500-57.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1037,8 +1025,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4148-2000x1415-10-2000x1415-10.jpg",
-                "image": "assets/images/sam-4148-2000x1415-10.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4148-2000x1415-10-2000x1415-10.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4148-2000x1415-10.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1047,8 +1035,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4149-2000x1500-68-2000x1500-54.jpg",
-                "image": "assets/images/sam-4149-2000x1500-68.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4149-2000x1500-68-2000x1500-54.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4149-2000x1500-68.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1057,8 +1045,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4150-2000x1500-83-2000x1500-71.jpg",
-                "image": "assets/images/sam-4150-2000x1500-83.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4150-2000x1500-83-2000x1500-71.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4150-2000x1500-83.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1067,8 +1055,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4063-2000x1500-16-2000x1500-69.jpg",
-                "image": "assets/images/sam-4063-2000x1500-16.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4063-2000x1500-16-2000x1500-69.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4063-2000x1500-16.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1077,8 +1065,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4045-2000x1500-30-2000x1500-50.jpg",
-                "image": "assets/images/sam-4045-2000x1500-30.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4045-2000x1500-30-2000x1500-50.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4045-2000x1500-30.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1087,8 +1075,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4054-2000x1500-11-2000x1500-7.jpg",
-                "image": "assets/images/sam-4054-2000x1500-11.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4054-2000x1500-11-2000x1500-7.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4054-2000x1500-11.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1097,8 +1085,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4155-2000x1500-10-2000x1500-78.jpg",
-                "image": "assets/images/sam-4155-2000x1500-10.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4155-2000x1500-10-2000x1500-78.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4155-2000x1500-10.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1107,8 +1095,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4154-2000x1500-65-2000x1500-11.jpg",
-                "image": "assets/images/sam-4154-2000x1500-65.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4154-2000x1500-65-2000x1500-11.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4154-2000x1500-65.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1117,8 +1105,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4155-2000x1500-75-2000x1500-47.jpg",
-                "image": "assets/images/sam-4155-2000x1500-75.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4155-2000x1500-75-2000x1500-47.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4155-2000x1500-75.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1127,8 +1115,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4168-2000x1500-64-2000x1500-78.jpg",
-                "image": "assets/images/sam-4168-2000x1500-64.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4168-2000x1500-64-2000x1500-78.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4168-2000x1500-64.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1137,8 +1125,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4169-2000x1500-95-2000x1500-34.jpg",
-                "image": "assets/images/sam-4169-2000x1500-95.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4169-2000x1500-95-2000x1500-34.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4169-2000x1500-95.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1147,8 +1135,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4170-2000x1500-31-2000x1500-35.jpg",
-                "image": "assets/images/sam-4170-2000x1500-31.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4170-2000x1500-31-2000x1500-35.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4170-2000x1500-31.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1157,8 +1145,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4168-2000x1500-92-2000x1500-83.jpg",
-                "image": "assets/images/sam-4168-2000x1500-92.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4168-2000x1500-92-2000x1500-83.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4168-2000x1500-92.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1167,8 +1155,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4169-2000x1500-24-2000x1500-79.jpg",
-                "image": "assets/images/sam-4169-2000x1500-24.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4169-2000x1500-24-2000x1500-79.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4169-2000x1500-24.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1177,8 +1165,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4170-2000x1500-61-2000x1500-20.jpg",
-                "image": "assets/images/sam-4170-2000x1500-61.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4170-2000x1500-61-2000x1500-20.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4170-2000x1500-61.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1187,8 +1175,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4171-2000x1500-7-2000x1500-59.jpg",
-                "image": "assets/images/sam-4171-2000x1500-7.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4171-2000x1500-7-2000x1500-59.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4171-2000x1500-7.jpg",
                 "caption": "Type caption here",
                 "active": false
               },
@@ -1197,8 +1185,8 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "assets/images/sam-4173-2000x1500-83-2000x1500-97.jpg",
-                "image": "assets/images/sam-4173-2000x1500-83.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sam-4173-2000x1500-83-2000x1500-97.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4173-2000x1500-83.jpg",
                 "caption": "Type caption here",
                 "active": true
               }
@@ -1215,8 +1203,11 @@
           "articleLayout": false
         },
         {
-          "_name": "contacts4",
-          "_anchor": "contacts4-0",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_anchor": "contacts1-0",
           "_params": {
             "paddingTop": 3,
             "paddingBottom": 3,
@@ -1229,37 +1220,25 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#3C3C3C"
           },
-          "text1": "<strong>Address</strong><br>98 Abanishe Street,<br>Off kudaki Road,<br>Hostel bus stop,<br>Agodo-Egbe,<br>Lagos,Nigeria.<br><br>\n<strong>Contacts</strong><br>\nEmail: <a href=\"mailto:jonsaix852@gmail.com\">info@adesuahotels.com.ng</a><br>&nbsp;Phone: +2348064474692,<br>Phone 2: +447506151240<br>",
-          "text2": "<p class=\"mbr-contacts__text\"><strong>Links</strong></p><ul class=\"mbr-contacts__list\"><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"index.html#msg-box8-0\">About</a></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><br></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"room.html\">Rooms</a></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><br></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\">Book Now</a></span></font></p></ul>",
-          "form": {
-            "title": "MESSAGE",
-            "action": "jonsaix852@gmail.com",
-            "alerts": {
-              "success": "Thanks for filling out form!"
+          "logo": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/adesua-hotel-192x128-128x85.png",
+              "width": 128,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
             },
-            "fields": {
-              "name": {
-                "title": "Name",
-                "visible": true,
-                "customTitle": "Name*"
-              },
-              "email": {
-                "title": "Email",
-                "visible": true,
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "title": "Phone",
-                "visible": true,
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "Message"
-              }
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "",
+              "size": 0
             }
           },
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-sm btn-black\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\">Contact us</a>"
+          "text1": "<strong>Address</strong>&nbsp;<br>98Abanishe Street<br>Off kudaki Road,<br>Hostel bus stop,<br>Agodo-Egbe,<br>Lagos,Nigeria",
+          "text2": "<strong>Contacts</strong><br>\nEmail: info@adesuahotels.com.ng<br> Phone: +2348064474692<br>Phone 2: +447506151240",
+          "text3": "<p><font color=\"#7c7c7c\" face=\"Montserrat, sans-serif\" size=\"3\"><span style=\"letter-spacing: -1px; line-height: 20px;\"><b>Quick links</b></span></font><br>\n<a href=\"index.html#msg-box8-0\">About</a><a class=\"text-primary\" href=\"https://mobirise.com/\"></a><br>\n<a href=\"room.html\">Rooms</a><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-win.zip\"></a><br>\n<a href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\">Book Now</a><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-mac.zip\"></a></p>"
         }
       ]
     },
@@ -1281,7 +1260,7 @@
             "slides": [
               {
                 "active": false,
-                "image": "assets/images/sam-4165-2000x1500-39.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4165-2000x1500-39.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -1296,7 +1275,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4164-2000x1500-26.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4164-2000x1500-26.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -1311,7 +1290,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4163-2000x1500-4.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4163-2000x1500-4.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -1326,7 +1305,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4158-2000x1500-60.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4158-2000x1500-60.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -1341,7 +1320,7 @@
               },
               {
                 "active": false,
-                "image": "assets/images/sam-4160-2000x1500-31.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4160-2000x1500-31.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -1356,7 +1335,7 @@
               },
               {
                 "active": true,
-                "image": "assets/images/sam-4160-2000x1500-31.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sam-4160-2000x1500-31.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "overlay": true,
@@ -1434,7 +1413,7 @@
             "fontName": {},
             "fontColor": "#ffffff",
             "fontHoverColor": "#c0a375",
-            "transparent": false,
+            "transparent": true,
             "sticky": true,
             "logo": true,
             "showBrand": true,
@@ -1444,7 +1423,7 @@
           "logo": {
             "image": {
               "active": true,
-              "src": "assets/images/adesua-hotel-192x128-23.png",
+              "src": "@PROJECT_PATH@/assets/images/adesua-hotel-192x128-192x128.png",
               "height": 128,
               "alt": "Mobirise",
               "link": "https://adesuahotels.com.ng",
@@ -1478,8 +1457,11 @@
           "text": "Copyright © . Adesua hotels and events center. 2016 Developed by <a href=\"http://oriaddesigns.com\">oriad&nbsp;designs</a>"
         },
         {
-          "_name": "contacts4",
-          "_anchor": "contacts4-4",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts1",
+          "_anchor": "contacts1-0",
           "_params": {
             "paddingTop": 3,
             "paddingBottom": 3,
@@ -1492,37 +1474,25 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#3C3C3C"
           },
-          "text1": "<strong>Address</strong><br>98 Abanishe Street,<br>Off kudaki Road,<br>Hostel bus stop,<br>Agodo-Egbe,<br>Lagos,Nigeria.<br><br>\n<strong>Contacts</strong><br>\nEmail: <a href=\"mailto:jonsaix852@gmail.com\">info@adesuahotels.com.ng</a><br>&nbsp;Phone: +2348064474692,<br>Phone 2: +447506151240<br>",
-          "text2": "<p class=\"mbr-contacts__text\"><strong>Links</strong></p><ul class=\"mbr-contacts__list\"><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"index.html#msg-box8-0\">About</a></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><br></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"room.html\">Rooms</a></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><br></span></font></p><p><font face=\"Raleway\"><span style=\"font-size: 14px; line-height: 25px;\"><a href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\">Book Now</a></span></font></p></ul>",
-          "form": {
-            "title": "MESSAGE",
-            "action": "jonsaix852@gmail.com",
-            "alerts": {
-              "success": "Thanks for filling out form!"
+          "logo": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/adesua-hotel-192x128-128x85.png",
+              "width": 128,
+              "active": true,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
             },
-            "fields": {
-              "name": {
-                "title": "Name",
-                "visible": true,
-                "customTitle": "Name*"
-              },
-              "email": {
-                "title": "Email",
-                "visible": true,
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "title": "Phone",
-                "visible": true,
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "Message"
-              }
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-contacts1",
+              "link": "",
+              "size": 0
             }
           },
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-sm btn-black\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\">Contact us</a>"
+          "text1": "<strong>Address</strong>&nbsp;<br>98Abanishe Street<br>Off kudaki Road,<br>Hostel bus stop,<br>Agodo-Egbe,<br>Lagos,Nigeria",
+          "text2": "<strong>Contacts</strong><br>\nEmail: info@adesuahotels.com.ng<br> Phone: +2348064474692<br>Phone 2: +447506151240",
+          "text3": "<p><font color=\"#7c7c7c\" face=\"Montserrat, sans-serif\" size=\"3\"><span style=\"letter-spacing: -1px; line-height: 20px;\"><b>Quick links</b></span></font><br>\n<a href=\"index.html#msg-box8-0\">About</a><a class=\"text-primary\" href=\"https://mobirise.com/\"></a><br>\n<a href=\"room.html\">Rooms</a><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-win.zip\"></a><br>\n<a href=\"https://securebooking.hotelafri.ca/56436fb5eabc88074b7b23c9/booking/button\">Book Now</a><a class=\"text-primary\" href=\"https://mobirise.com/mobirise-free-mac.zip\"></a></p>"
         }
       ]
     }

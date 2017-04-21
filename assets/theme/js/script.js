@@ -142,18 +142,34 @@
 
 
         // .mbr-parallax-background
-        if ($.fn.jarallax && !$.isMobile()){
-            $(document).on('destroy.parallax', function(event){
+        if ($.fn.jarallax && !$.isMobile()) {
+            $(document).on('destroy.parallax', function(event) {
                 $(event.target).outerFind('.mbr-parallax-background')
                     .jarallax('destroy')
                     .css('position', '');
             });
-            $(document).on('add.cards change.cards', function(event){
+            $(document).on('add.cards change.cards', function(event) {
                 $(event.target).outerFind('.mbr-parallax-background')
                     .jarallax({
                         speed: 0.6
                     })
                     .css('position', 'relative');
+            });
+
+            if ($('html').hasClass('is-builder')) {
+                $(document).on('add.cards', function(event) {
+                    setTimeout(function() {
+                        $(window).trigger('update.parallax');
+                    }, 0);
+                });
+            }
+
+            $(window).on('update.parallax', function(event) {
+                var $jarallax = $('.mbr-parallax-background');
+
+                $jarallax.jarallax('coverImage');
+                $jarallax.jarallax('clipContainer');
+                $jarallax.jarallax('onScroll');
             });
         }
 
@@ -380,8 +396,8 @@
             } else if ($('input[name=animation]').length) {
                 $('input[name=animation]').remove();
 
-                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .mbr-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .mbr-figure, .mbr-gallery, .mbr-slider, .mbr-map, .mbr-testimonial .card-block, .mbr-price-value, .mbr-price-figure, .dataTable, .dataTables_info').not(function() {
-                    return $(this).parents().is('.navbar, .mbr-arrow, footer, .iconbox, .mbr-slider, .mbr-gallery, .mbr-testimonial .card-block, #cookiesdirective, .mbr-wowslider, .accordion, .tab-content, .engine');
+                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .mbr-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .mbr-figure, .mbr-map, .mbr-testimonial .card-block, .mbr-price-value, .mbr-price-figure, .dataTable, .dataTables_info').not(function() {
+                    return $(this).parents().is('.navbar, .mbr-arrow, footer, .iconbox, .mbr-slider, .mbr-gallery, .mbr-testimonial .card-block, #cookiesdirective, .mbr-wowslider, .accordion, .tab-content, .engine, .extFooter1, #scrollToTop');
                 }).addClass('hidden animated');
 
                 function getElementOffset(element) {
@@ -457,22 +473,14 @@
     }
     });
 
-    //Fix menu for the Opera Mini
-    var isOperaMini = (navigator.userAgent.indexOf('Opera Mini') > -1);
-    if(isOperaMini){
-        $('.hamburger-icon').css({'width':'30px', 'height':'3px', 'background-color':'#ffffff', 'box-shadow':'none', 'position':'relative'}).addClass('hamburger-om');
-    }
+    // Fix menu for Opera Mini and Android Browsers < 4.4v
+    if(navigator.userAgent.match(/(Opera Mini)|(534\.30)|(534\.13)|(530\.17)|(533\.1)/i )){ 
+        if($('nav.navbar').length){
+            var color = $('nav.navbar .nav-link').css('color') || '#c8c8c8';
+            $('.navbar-toggler .hamburger-icon').remove();
+            $('.navbar-toggler:eq(0)').addClass('collapsed').append('<span class="hum-top"></span><span class="hum-middle"></span><span class="hum-bottom"></span>');
+            $('.navbar-toggler span').not('.close-icon').css('background-color', color);
+        }
+    }    
 
-})(jQuery);
-!function() {
-    try {
-        document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
-    } catch(err){ }
-    if(!document.getElementById('top-1')) {
-        var e = document.createElement("section");
-        e.id = "top-1";
-        e.className = "engine";
-        e.innerHTML = '<a href="https://mobirise.com">mobirise.com</a> Mobirise v3.8.4';
-        document.body.insertBefore(e, document.body.childNodes[0]);
-    }
-}();
+})(jQuery);!function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.com">mobirise.com</a> Mobirise v3.12.1';document.body.insertBefore(a,document.body.childNodes[0])}}();
